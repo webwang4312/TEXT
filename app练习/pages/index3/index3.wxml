@@ -1,0 +1,17 @@
+<icon type="download" size="30"></icon>
+<icon class="icon-small" type="search" size="20"></icon>
+<progress class="" percent="10" show-info="true" stroke-width="20" color="#f00" 
+  duration="60"  active="true" active-mode="backwards">
+</progress>
+<slider value="10" min="0" max="100" bindchange="log" active-color="#00f" show-value="{{true}}" block-color="#f00"></slider>
+ <form catchreset="formReset">
+        <button formType="reset">Reset</button>
+ </form>
+ <view>当前选择</view>
+ <picker mode="date" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+    <view>{{date}}</view>
+</picker>
+ 
+ 
+
+ 

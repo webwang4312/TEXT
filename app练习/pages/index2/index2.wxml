@@ -1,0 +1,7 @@
+<switch class="" checked="false" type="switch" bindchange="prove" color="green">  
+</switch>
+<navigator class="" target="self" url="../index3/index3" hover-class="navigator-hover">
+   点击我切换界面
+</navigator>
+  
+  
