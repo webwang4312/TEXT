@@ -13,6 +13,8 @@ Page({
     ],
   },
   handleTodo(event) {
+    console.log(event);
+    
     const { position } = event.detail;
     switch(position) {
       case 'left': {

@@ -3,7 +3,7 @@
     <van-field
       value="{{ todo }}"
       placeholder="请输入代办事项"
-      border="{{ false }}"
+      border="{{false}}"
     />
   </van-cell-group>
 

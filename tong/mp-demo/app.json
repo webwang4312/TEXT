@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index2/index2",
     "pages/welcome/welcome",
+    "pages/index2/index2",
     "pages/index/index",
     "pages/module/module",
     "pages/todos/todos",
