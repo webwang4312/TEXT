@@ -6,7 +6,7 @@
   bind:change="onChange"
   bind:search="onSearch"
 >
-  <view slot="action" bind:tap="onClick">搜索</view>
+  <view slot="action" bind:tap="onClick">搜索中</view>
 </van-search>
 <view>基础用法</view>
 <van-divider />

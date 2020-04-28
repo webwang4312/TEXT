@@ -34,7 +34,7 @@
       },
       {
         "pagePath": "pages/user/user",
-        "text": "我的",
+        "text": "个人中心",
         "iconPath": "static/tabs/user.png",
         "selectedIconPath": "static/tabs/user-active.png"
       }
