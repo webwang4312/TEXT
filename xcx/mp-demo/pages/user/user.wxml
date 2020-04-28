@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <image src="{{ header }}"></image>
+  </view>
+
+  <!-- 个人中心 头像 -->
+  <view class="avatar">
+    <image wx:if="{{ !hasUserInfo }}" src="{{ avatar }}"></image>
+    <image wx:else src="{{ userInfo.avatarUrl }}"></image>
+  </view>
+
+  <!-- 个人中心 菜单组 -->
+  <van-cell-group class="cell-group" wx:for="{{ groups }}" wx:for-item="group" wx:key="group">
+    <van-cell wx:for="{{ group }}" wx:for-item="cell" wx:key="cell" title="{{ cell.title }}" icon="{{ cell.icon }}" is-link />
+  </van-cell-group>
+</view>

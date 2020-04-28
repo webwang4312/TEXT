@@ -1,7 +1,0 @@
-<view class="container">
-  <van-grid column-num="3">
-    <van-grid-item icon="photo-o" text="极简待办" url="/pages/todos/todos" />
-    <van-grid-item icon="photo-o" text="图书借阅"  url="/pages/index2/index2"/>
-    <van-grid-item icon="photo-o" text="单词学习" />
-  </van-grid>
-</view>

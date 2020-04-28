@@ -1,0 +1,17 @@
+<view class="container">
+  <!-- 顶部背景图 -->
+  <view class="header">
+    <image src="{{ header }}"></image>
+  </view>
+
+  <!-- 顶部 logo -->
+  <view class="logo">
+    <image src="{{ logo }}"></image>
+  </view>
+
+  <!-- 按钮部分 -->
+  <view class="btns">
+    <van-button type="info" icon="chat" wx:if="{{ !hasUserInfo && canIUse }}" open-type="getUserInfo" bind:getuserinfo="getUserInfo" block>开启小程序之旅</van-button>
+    <van-button type="info" icon="chat" wx:else bind:click="switchToIndex" block>开启小程序之旅</van-button>
+  </view>
+</view>

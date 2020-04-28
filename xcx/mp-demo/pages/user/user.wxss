@@ -1,0 +1,14 @@
+/* 用户头像 */
+.avatar {
+  height: 240rpx;
+  text-align: center;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+}
+
+.avatar image {
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+}
+

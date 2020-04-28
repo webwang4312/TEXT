@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="header">
+    <image src="{{ header }}"></image>
+  </view>
+</view>
