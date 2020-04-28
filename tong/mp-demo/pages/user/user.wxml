@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="bg-header">
+    <image src="{{ header }}"></image>
+  </view>
+
+  <view class="avatar">
+    <image src="/static/images/man.png"></image>
+  </view>
+
+  <van-cell-group class="group">
+    <van-cell title="个人信息" icon="user-circle-o" is-link />
+  </van-cell-group>
+
+  <van-cell-group class="group">
+    <van-cell title="账号管理" icon="setting-o" is-link />
+  </van-cell-group>
+</view>

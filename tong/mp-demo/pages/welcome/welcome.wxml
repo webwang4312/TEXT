@@ -1,0 +1,16 @@
+<view class="container">
+  <!-- 顶部背景图 -->
+  <view class="bg-header">
+    <image src="{{ header }}"></image>
+  </view>
+
+  <!-- 顶部 logo -->
+  <view class="logo">
+    <image src="{{ logo }}"></image>
+  </view>
+
+  <!-- 登陆按钮 -->
+  <view class="btns">
+    <van-button icon="chat" type="info" open-type="getUserInfo" bindgetuserinfo="getUserInfo" block>开启小程序之旅</van-button>
+  </view>
+</view>

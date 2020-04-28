@@ -1,0 +1,14 @@
+{
+  
+    "usingComponents": {
+      "van-button": "@vant/weapp/button/index",
+      "van-cell": "@vant/weapp/cell",
+      "van-cell-group": "@vant/weapp/cell-group",
+      "van-divider": "@vant/weapp/divider",
+      "van-field": "@vant/weapp/field",
+      "van-grid": "@vant/weapp/grid",
+      "van-grid-item": "@vant/weapp/grid-item",
+      "van-swipe-cell": "@vant/weapp/swipe-cell"
+  
+  }
+}

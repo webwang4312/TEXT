@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "mp-demo/",
+			"problemMatcher": [],
+			"label": "npm: install - mp-demo",
+			"detail": "install dependencies from package"
+		}
+	]
+}
