@@ -14,12 +14,12 @@
   <block wx:if="{{ todos.length > 0 }}">
     <van-divider contentPosition="center">以下是待办的</van-divider>
     <van-cell-group>
-      <van-swipe-cell wx:for="{{ todos }}" wx:for-index="idx" wx:key="item" data-index="{{idx}}" right-width="{{ 65 }}" left-width="{{ 65 }}" bind:open="handleTodo" >
+      <van-swipe-cell wx:for="{{ todos }}" wx:for-index="idx" wx:key="item" data-index="{{idx}}" right-width="{{ 65 }}" left-width="{{ 65 }}" bind:open="onClose" async-close>
         <view slot="left" class="van-swipe-cell__left">完成</view>
         <van-cell-group>
           <van-cell title="{{ item.content }}" value="{{ item.endDate }}" />
         </van-cell-group>
-        <view slot="right" class="van-swipe-cell__right">删除</view>
+        <view slot="right" class="van-swipe-cell__right" >删除</view>
       </van-swipe-cell>
     </van-cell-group>
   </block>

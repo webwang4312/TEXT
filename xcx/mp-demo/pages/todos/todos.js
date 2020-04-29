@@ -3,6 +3,7 @@ const { formatTime } = require('../../utils/util.js')
 Page({
   data: {
     todo: {},
+    todo2:{},
     todos: [
       {
         content: '今天出去玩',
@@ -59,11 +60,11 @@ Page({
   },
   // 保存代办窗口内容：TODO 应该将 todo 对象提交到服务器存储
   saveTodoPopup: function(e) {
-    let todo = this.data.todo
-    let todos = this.data.todos
+    let todo = this.data.todo;
+    let todos = this.data.todos;
 
-    todo.status = 0
-    todos.push(todo)
+    todo.status = 0;
+    todos.push(todo);
 
     this.setData({
       todo: {},
@@ -124,35 +125,41 @@ Page({
     })
   },
   
-  handleTodo(event) {
-    const { position } = event.detail;
-    switch(position) {
-      case 'left': {
-        console.log('左边打开了');
-        // 代办完成，将该代办从 todos 数组中删除，并且添加到 finishedTodos 中
-        let {index} = event.target.dataset;
-        let todos = this.data.todos;
-         let finishedTodos = this.data.finishedTodos;
-        todos.splice(index, 1);
-        finishedTodos.push(index, 1);
+  onClose(event) {
+    console.log(event);
+    let index=event.target.dataset.index;
+    console.log({index});
+    let todos=this.data.todos;
+    let todo2=this.data.todo2;
+    let finishedTodos=this.data.finishedTodos;
+    let unfinishedTodos=this.data.unfinishedTodos;
+    const { position, name } = event.detail;
+    switch (position) {
+      case 'left':
+        todos.splice(index+1,1);
+        finishedTodos.push(index,index+1)
         this.setData({
-         finishedTodos: todos
-        });
+          finishedTodos:todos
+        })
         break;
-      }
-      case 'right': {
-        console.log('右边打开了')
-        // 删除代办，将该代办从 todos 数组中删除
-        let {index} = event.target.dataset;
-        let todos = this.data.todos;
-         let unfinishedTodos = this.data.unfinishedTodos;
-        todos.splice(index, 1);
-        unfinishedTodos.push(index, 1);
-        this.setData({
-          unfinishedTodos: todos
-        });
+      case 'right':
+        todos.splice(index+1,1)
+        unfinishedTodos.push(index,index)
+       this.setData({
+        unfinishedTodos:todos
+       })
+
+       
+        
+       
         break;
-      }
+    }
   }
-}
+
+
+
+
+
+
+  
 })
