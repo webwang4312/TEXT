@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <link rel="stylesheet" href="./1.css">
+    <script src="https://kit.fontawesome.com/67963477de.js" crossorigin="anonymous"></script>
+    <style>
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+        .ul1 li{
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+           background-color: #EAEDF4;
+           margin-top: 2px;
+           word-spacing: 5px;
+        }
+        .ul1 li:hover{
+            background-color: darkgrey;
+        }
+
+        .ul2{
+            float: right;
+        }
+        .ul2 li{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="ul1">
+            <li>文档</li>
+            <li>音乐</li>
+            <li>图片</li>
+            <li>视频</li>
+            <li>笔记</li>
+        </ul>
+        <ul class="ul2">
+            <li>文档</li>
+            <li>音乐</li>
+            <li>图片</li>
+            <li>视频</li>
+            <li>笔记</li>
+        </ul>
+        
+
+    </div>
+    <i class="fas fa-arrow-left"></i>
+    <i class="fa fa-trash" aria-hidden="true"></i>
+
+
+<article>
+    
+</article>
+</body>
+<script src="../jquery-3.4.1.min.js">
+</script>
+<script>
+    $(function(){
+        $(".fa").on("click",function(){
+            alert(1)
+        })
+        $(".ul1 li").mouseenter(function(){
+            $(".ul2 li").eq($(this).index()).stop().show()
+        });
+        $(".ul1 li").mouseleave(function(){
+            $(".ul2 li").eq($(this).index()).stop().hide()
+        })
+//     let array=[4,1,15,2,30];
+//     var cars = [
+//         {type:"Volvo", year:2016},
+//         {type:"Saab", year:2001},
+//         {type:"BMW", year:2010}];
+   
+//    let sort2=cars.sort(function(a,b){
+//         return b.year - a.year
+//     });
+//    let sort3= cars.sort(function(a, b){
+// 	  var x = a.type.toLowerCase();
+// 	  var y = b.type.toLowerCase();
+// 	  if (x < y) {return -1;}
+// 	  if (x > y) {return 1;}
+// 	  return 0;
+// });
+//console.log(sort2);
+// console.log(sort3);
+
+
+var arr = ['abc','abcd','sss','2','d','t','2','ss','f','22','d',NaN,NaN];
+    //定义一个新的数组
+    var s = [];
+    //遍历数组
+    for(var i = 0;i<arr.length;i++){
+        if(s.indexOf(arr[i]) == -1){  //判断在s数组中是否存在，不存在则push到s数组中
+            s.push(arr[i]);
+        }
+    }
+    console.log(s);
+    })
+
+    </script> 
+</html>
