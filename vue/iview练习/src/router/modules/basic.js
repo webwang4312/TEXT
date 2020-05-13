@@ -30,7 +30,7 @@ export default {
             name: `${pre}teacher`,
             meta: {
                 ...meta,
-                title: 'teacher',
+                title: '老师管理',
                 closable: false
             },
             component: () => import('@/pages/basic/teacher')
@@ -40,7 +40,7 @@ export default {
             name: `${pre}zom`,
             meta: {
                 ...meta,
-                title: 'zom',
+                title: '学生管理',
                 closable: false
             },
             component: () => import('@/pages/basic/zom')
