@@ -1,26 +1,16 @@
 <template>
-  <div class="about">
-    <Button @click="add()">Default</Button>
-    <br>
-    <Button type="primary">Primary</Button>
-    <br>
-    <input type="text" v-model="msg"/>
-    <p>{{msg}}</p>
-  </div>
+  <div class="dashboard" ref="test1"></div>
 </template>
-<script>
-export default {
-  name: "about",
-  data() {
-    return {
-      msg: ""
-    };
-  },
-  methods: {
-    add() {
-      alert("d");
-    }
-  }
-};
-</script>
 
+
+<style lang="less" scoped>
+.dashboard {
+  height: 420/75rem;
+  background: #4b71fb;
+}
+</style>
+
+<script>
+import echarts from "echarts";
+
+</script>

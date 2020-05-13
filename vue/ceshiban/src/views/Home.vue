@@ -1,31 +1,36 @@
 <template>
   <div class="home">
-    <el-carousel :interval="4000" type="card" height="200px">
-      <img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f9513b0508a15051.jpg" alt />
-      <el-carousel-item v-for="item in idx" :key="item">{{item}}</el-carousel-item>
-    </el-carousel>
-    <img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f9513b0508a15051.jpg" alt />
+    <van-swipe :autoplay="4000">
+      <van-swipe-item v-for="(image, index) in images" :key="index">
+        <img v-lazy="image" />
+      </van-swipe-item>
+    </van-swipe>
+    <van-button type="danger">危险按钮</van-button>
   </div>
 </template>
 
 
-<style>
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
+<style scoped>
+.van-swipe{
+  width:400px;
+  height:200px;
+  margin:30px auto;
 }
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
+ img{
+    width: 400px;
+     height: 200px;
+  }
 </style>
+
 <script>
 export default {
-  name: "Home",
   data() {
     return {
-      idx: 3
+      images: [
+        "https://img.yzcdn.cn/vant/apple-1.jpg",
+        "https://img.yzcdn.cn/vant/apple-2.jpg"
+      ]
     };
-  },
-  components: {}
+  }
 };
 </script>

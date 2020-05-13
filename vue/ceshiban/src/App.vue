@@ -1,10 +1,22 @@
 <template>
   <div id="app">
-    <router-link to="/Home">Home</router-link>
-    <router-link to="/About">About</router-link>
-    <router-view></router-view>
+      <router-link to="/Home"><span>标签1</span></router-link>
+      <router-link to="/About"><span>标签2</span></router-link>
+      <router-view></router-view>
   </div>
 </template>
 
-<style lang="less">
+<style scoped>
 </style>
+<script>
+export default {
+  data() {
+    return {
+      active: 2
+    }
+    },
+    methods:{
+    
+  }
+};
+</script>

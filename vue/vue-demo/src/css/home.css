@@ -1,0 +1,42 @@
+.home2,#main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ivu-card-head p,
+  .ivu-card-head-inner {
+    height: 39px;
+  }
+  .ivu-btn-ghost.ivu-btn-success{
+    height: 20px;
+    text-align: center;
+   position: relative;
+   top: -3px;
+   right: -165px;
+  }
+  .icon{
+    position: relative;
+    bottom: -8px;
+  }
+  .green{
+    display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: green;
+  }
+  .blue{
+    display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color:blue;
+  }
+  .red{
+    display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: red;
+  }

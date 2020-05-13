@@ -16,9 +16,14 @@ const routes = [
     component: () =>import("../views/About")
   },
   {
-    path: "/Info",
-    name: "info",
-    component: () =>import("../views/Info")
+    path: "/Zhuxingtu",
+    name: "Zhuxingtu",
+    component: () =>import("../views/Zhuxingtu")
+  },
+  {
+    path: "/Home",
+    name: "Home",
+    component: () =>import("../views/Home")
   }
 ];
 
