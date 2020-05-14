@@ -1,0 +1,9 @@
+<view class="container">
+  <van-grid column-num="3">
+    <van-grid-item wx:for="{{ grids }}" wx:key="*this" icon="{{ item.icon }}" text="{{ item.text }}" url="{{ item.url }}" />
+  </van-grid>
+</view>
+<view class="action">
+   <button class="cu-btn bg-red margin-tb-sm lg">嫣红</button>
+    <switch class="sm" bindchange="SetShadow"></switch>
+  </view>

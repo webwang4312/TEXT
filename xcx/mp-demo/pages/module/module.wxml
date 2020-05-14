@@ -1,5 +1,0 @@
-<view class="container">
-  <van-grid column-num="3">
-    <van-grid-item wx:for="{{ grids }}" wx:key="*this" icon="{{ item.icon }}" text="{{ item.text }}" url="{{ item.url }}" />
-  </van-grid>
-</view>
