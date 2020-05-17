@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vant/touch-emulator": "^1.2.0",
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.1",
     "vant": "^2.8.1",
