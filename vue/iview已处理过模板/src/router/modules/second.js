@@ -26,14 +26,14 @@ export default {
             component: () => import('@/pages/second/student')
         },
         {
-            path: 'teacher',
-            name: `${pre}teacher`,
+            path: 'lunbotu',
+            name: `${pre}lunbotu`,
             meta: {
                 ...meta,
-                title: 'teacher',
+                title: 'lunbotu',
                 closable: false
             },
-            component: () => import('@/pages/second/teacher')
+            component: () => import('@/pages/second/lunbotu')
         },
         {
             path: 'zom',

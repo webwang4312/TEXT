@@ -6,13 +6,15 @@
         <p>列表2</p>
         <p>列表3</p>
     </Drawer>
-    <a href="http://www.baidu.com">链接</a>
+    <router-link to="/lunbotu">totototo</router-link>
+    <router-view></router-view>
     </div>
 </template>
 
 <style lang="less" scoped>
 
 </style>
+
 <script>
     export default {
         name: 'zom',

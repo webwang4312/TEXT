@@ -2,8 +2,8 @@
   <div id="app">
     <div class="header">
       <router-link to="/home">Home</router-link>|
-      <router-link to="/about">About</router-link>|
-      <router-link to="/first">first</router-link>|
+      <router-link to="/lunbotu">lunbotu</router-link>|
+      <router-link to="/shangcheng">shangcheng</router-link>|
       <router-view />
     </div>
   </div>

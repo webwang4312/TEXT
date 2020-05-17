@@ -10,16 +10,16 @@ const routes = [
     component:()=>import('../views/Home.vue')
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/lunbotu',
+    name: 'lunbotu',
    
-    component: () => import('../views/About.vue')
+    component: () => import('../views/lunbotu.vue')
   },
   {
-    path: '/first',
-    name: 'first',
+    path: '/shangcheng',
+    name: 'shangcheng',
    
-    component: () => import('../views/first.vue')
+    component: () => import('../views/shangcheng.vue')
   }
 ]
 

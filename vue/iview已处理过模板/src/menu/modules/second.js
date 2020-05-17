@@ -11,8 +11,8 @@ export default {
             title: 'student'
         },
         {
-            path: `${pre}teacher`,
-            title: 'teacher'
+            path: `${pre}lunbotu`,
+            title: 'lunbotu'
         },
         {
             path: `${pre}zom`,
