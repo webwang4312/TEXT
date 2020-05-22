@@ -6,11 +6,11 @@ const globalData = {
 
 App({
   onLaunch: function() {
-    // console.log('生命周期回调：监听小程序初始化')
+     //console.log('生命周期回调：监听小程序初始化')
 
     wx.login({
       success: res => {
-        // console.log('wx.login', res)
+        //console.log('wx.login', res)
       }
     })
     
@@ -22,7 +22,6 @@ App({
           wx.getUserInfo({
             success: res => {
               this.globalData.userInfo = res.userInfo
-
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }

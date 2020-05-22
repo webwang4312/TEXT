@@ -4,6 +4,6 @@
   </van-grid>
 </view>
 <view class="action">
-   <button class="cu-btn bg-red margin-tb-sm lg">嫣红</button>
+   <button class="cu-btn bg-red margin-tb-sm lg">姹紫嫣红嫣红</button>
     <switch class="sm" bindchange="SetShadow"></switch>
   </view>
