@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/index/index",
+   
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/shouye.png",
+        "selectedIconPath": "./images/shouye_select.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/mine_select.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "商品结算",
+        "iconPath": "./images/shangpin.png",
+        "selectedIconPath": "./images/shangpin_select.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/mine_select.png"
+      }
+    ],
+    "selectedColor": "ff0000"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0F3F6",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

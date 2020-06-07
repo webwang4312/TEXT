@@ -1,0 +1,22 @@
+<!-- index.wxml -->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{swiperList}}" wx:key='idx'>
+		<image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+		<video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+	</swiper-item>
+</swiper>
+<view class="list">
+	<block wx:for="{{recommendlist}}" wx:key="idx" class="list">
+		<view>
+			<image src='{{item.image}}'></image>
+			<p>{{item.title}}</p>
+		</view>
+	</block>
+</view>
+
+<van-grid column-num="5">
+	<van-grid-item icon="{{item.icon}}" text="{{item.name}}" wx:for="{{ iconList }}" wx:key="index" />
+</van-grid>
+<text bind:tap="luyou">
+  路由事件
+</text>

@@ -1,0 +1,23 @@
+/**index.wxss**/
+.flex {
+  height: 100vh;
+}
+.list {
+  width: 100vm;
+  height: 260rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.list image {
+  width:100%;
+  height:150rpx;
+}
+.list>view{
+  width: 100%;
+}
+.list p{
+  text-align: center;
+}
