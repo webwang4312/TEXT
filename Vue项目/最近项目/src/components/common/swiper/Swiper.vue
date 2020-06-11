@@ -1,4 +1,5 @@
 <template>
+<!-- 轮播图效果 -->
   <div id="swiper">
     <el-carousel height="250px">
       <el-carousel-item v-for="item in swiperimg" :key="item.acm">
@@ -38,7 +39,7 @@ export default {
 };
 </script>
 
-<style scoped lang='less'>
+<style  lang='less'>
 #swiper {
   height: 250px;
 }
@@ -47,6 +48,14 @@ img {
   height: 100%;
 }
 .el-carousel ul {
-  bottom: 60px !important;
+  bottom: 20px !important;
+}
+.el-carousel__indicator{
+  padding:5px 5px !important;
+}
+.el-carousel__indicator button{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
 }
 </style>

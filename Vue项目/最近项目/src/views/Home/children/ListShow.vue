@@ -2,16 +2,16 @@
   <div id="listshow">
     <div>
       <ul>
-        <li v-for="item in listgoods" :key="item.iid">
-          <router-link :to="'/listdetail/'+item.iid">
+        <li v-for="item in listgoods['pop'].list" :key="item.iid">
+          <router-link :to="{path:'/detail',query:{iid:item.iid}}">
             <img v-lazy="item.show.img" alt />
           </router-link>
           <br />
-          <span style="color:pink" >{{item.title}}</span>
+          <span style="color:pink">{{item.title}}</span>
           <p style="text-decoration:line-through;text-align:left">{{'原价'+item.orgPrice}}</p>
           <span style="color:red;text-align:left;font-size:18px">{{'现价'+'￥'+item.price}}</span>
           <br />
-          <span class="iconfont icon-gouwuche">加入购物车</span>
+          <p class="iconfont icon-gouwuche" style="text-align:right">加入购物车</p>
         </li>
       </ul>
     </div>
@@ -29,23 +29,19 @@ export default {
   },
   props: {
     listgoods: {
-      type: Array,
+      type: Object,
       default() {
-        return [];
+        return {};
       }
     }
   },
-  mounted() {},
-  watch: {
-    index: function(newvalue, oldvalue) {
-      //console.log(newvalue, oldvalue);
-    }
+  mounted() {
+    //document.addEventListener('scroll',this.scrollLoad)
   },
+  watch: {},
   created() {},
   computed: {},
-  methods: {
-    
-  }
+  methods: {}
 };
 </script>
 <style lang="less" scoped>
@@ -63,6 +59,7 @@ export default {
     border-radius: 20px;
     img {
       width: 100%;
+      height: 241px;
     }
     label {
       font-size: 20px;

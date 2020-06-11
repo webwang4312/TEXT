@@ -13,6 +13,10 @@ const routes = [
     component: home
   },
   {
+    path: '/home',
+    redirect: '/home'
+  },
+  {
     path: '/cart',
     name: 'cart',
     component: () => import('views/cart/cart.vue')

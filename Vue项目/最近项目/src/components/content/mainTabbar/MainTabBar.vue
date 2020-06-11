@@ -1,6 +1,6 @@
 <template>
   <div id="MainTabBar">
-    <!-- 底部栏 -->
+    <!-- 底部栏固定效果 -->
     <tab-bar-item link="/home">
       <img slot="icon" src="~assets/images/tabbar/home.svg" alt />
       <img slot="active-icon" src="~assets/images/tabbar/home_active.svg" alt />

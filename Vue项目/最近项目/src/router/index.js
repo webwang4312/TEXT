@@ -8,7 +8,11 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      requireAuth: true,
+      keepAlive: true // 需要缓存
+    }
   },
   // 默认路径
   {
@@ -31,15 +35,27 @@ const routes = [
     component: () => import('views/User/User.vue')
   },
   {
-    path: '/listdetail/:iid',
-    name: 'listdetail',
-    component: () => import('views/Home/children/ListDetail.vue')
+    path: '/detail',
+    name: 'detail',
+    component: () => import('views/Detail/detail.vue'),
+    meta: {
+      requireAuth: true,
+      keepAlive: false // 需要缓存
+    }
   },
 ]
 
 const router = new VueRouter({
   mode:'history',
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
+
 })
 
 export default router
