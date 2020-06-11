@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     tabClick(index) {
-      console.log(index+'2');
+      //console.log(index);
       switch (index) {
         case 0:
           this.currentType = POP;
