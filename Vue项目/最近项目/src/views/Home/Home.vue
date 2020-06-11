@@ -80,7 +80,7 @@ export default {
   },
   deactivated: function() {
     this.posy = this.$refs.scroll.scrollTop;
-    //console.log(this.posy);
+    console.log(this.posy);
   },
   methods: {
     tabClick(index) {
