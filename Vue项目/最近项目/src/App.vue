@@ -26,6 +26,7 @@
 }
 </style>
 <script>
+// 导入底部栏
 import MainTabBar from "components/content/mainTabbar/MainTabBar.vue";
 export default {
   components: {
