@@ -38,6 +38,7 @@ export default {
     };
   },
   watch: {
+    //底部栏设置
     $route(to, from) {
       if (
         to.path === "/home" ||
