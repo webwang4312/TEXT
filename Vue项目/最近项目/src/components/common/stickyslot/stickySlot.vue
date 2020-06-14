@@ -48,10 +48,8 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop;
       //console.log(scrollTop)
-      let offsetTop = document.querySelector("#searchBar").offsetTop;
-      scrollTop > offsetTop
-        ? (this.searchBarFixed = true)
-        : (this.searchBarFixed = false);
+      let offsetTop = document.querySelector('#searchBar').offsetTop
+      scrollTop > offsetTop ? (this.searchBarFixed = true) : (this.searchBarFixed = false);
     }
   },
   computed: {}
@@ -60,9 +58,9 @@ export default {
 
 <style lang="less" scoped>
 .searchBar {
-  background-color: snow;
-  display: flex;
-  flex-direction: row;
+  // background-color: snow;
+  // display: flex;
+  // flex-direction: row;
   .isFixed {
     background-color: snow;
     position: fixed;

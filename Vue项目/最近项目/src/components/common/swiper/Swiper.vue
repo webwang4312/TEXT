@@ -54,8 +54,8 @@ img {
   padding:5px 5px !important;
 }
 .el-carousel__indicator button{
-  width:20px;
-  height:20px;
+  width:10px;
+  height:10px;
   border-radius: 50%;
 }
 </style>
