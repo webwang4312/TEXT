@@ -1,5 +1,5 @@
 // 封装数据请求
-// 引入axios
+// 引入axios及封装
 import axios from 'axios'
 // 定义并导出请求函数request()
 export function request(config) {
