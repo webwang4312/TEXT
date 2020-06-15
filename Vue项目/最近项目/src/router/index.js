@@ -46,7 +46,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode:'history',
+  mode:'history',//缓存模式
   routes,
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
