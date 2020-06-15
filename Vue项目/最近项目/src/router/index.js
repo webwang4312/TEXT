@@ -40,7 +40,7 @@ const routes = [
     component: () => import('views/Detail/detail.vue'),
     meta: {
       requireAuth: true,
-      keepAlive: false // 需要缓存
+      keepAlive: false // 不需要缓存
     }
   },
 ]
