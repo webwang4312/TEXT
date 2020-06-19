@@ -1,0 +1,6 @@
+
+.picture{
+    width: 100px;
+    height: 100px;
+    background: url('./images/a.jpg') no-repeat center;
+}
