@@ -11,7 +11,6 @@ import VueLazyload from 'vue-lazyload';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -23,11 +22,11 @@ Vue.config.productionTip = false
 import { Button } from 'vant';
 import { Popup } from 'vant';
 import { Form } from 'vant';
-
+import { Cell } from 'vant';
 Vue.use(Form);
 Vue.use(Popup);
 Vue.use(Button);
-
+Vue.use(Cell);
 Vue.use(VueLazyload, {
  //加载中图片，一定要有，不然会一直重复加载占位图
  //加载失败图片

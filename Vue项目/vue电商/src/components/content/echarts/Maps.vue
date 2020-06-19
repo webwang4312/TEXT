@@ -26,8 +26,7 @@ export default {
       },
       toolbox: {
         feature: {
-          restore: {},
-          saveAsImage: {}
+        
         }
       },
       series: [

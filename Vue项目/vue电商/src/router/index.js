@@ -41,6 +41,11 @@ const routes = [
     component: () => import('views/cart/childComps/Table.vue')
   },
   {
+    path: '/detail',
+    name: 'detail',
+    component: () => import('views/detail/detail.vue')
+  },
+  {
     path: '/bootstrap',
     name: 'bootstrap',
     component: () => import('views/cart/childComps/bootstrap.vue')

@@ -1,11 +1,13 @@
 <template>
-  <div class="goods" @click="goToDetail">
-    <img v-lazy="getImg" :key="getImg" alt="">
+  <div class="goods" >
+    <img v-lazy="getImg" :key="getImg" alt="" >
     <div class="goods-info">
+       <h1 @click="goToDetail">xxxx</h1>
       <p>{{goods.title}}</p>
       <span class="price">¥{{goods.price}}</span>
       <span class="collect">{{goods.cfav}}</span>
     </div>
+   
   </div>
 </template>
 
@@ -22,11 +24,12 @@
        //console.log(this.goods);
     },
     methods: {
-      goToDetail: function () {
+      goToDetail() {
+        console.log('22222');
         // 1.获取iid
-        let iid = this.goods.iid;
-        // 2.跳转到详情页面
-        this.$router.push({path: '/detail', query: {iid}})
+        // let iid = this.goods.iid;
+        // // 2.跳转到详情页面
+        // this.$router.push({path: '/detail', query: {iid}})
       }
     },
     computed: {

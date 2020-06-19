@@ -1,0 +1,4 @@
+部署说明：
+
+1. 如果您要部署到测试或生产环境，需要到 https://pro.iviewui.com/user/purchases 添加产品授权，请按提示进行操作。
+2. 如遇到任何问题，请联系管理员微信：iviewpro。

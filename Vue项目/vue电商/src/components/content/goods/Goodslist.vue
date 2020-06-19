@@ -11,7 +11,7 @@ export default {
   name: "goodslist",
   props: {
     goods: {
-      type:Array,
+      type: Array,
       default() {
         return [];
       }
@@ -27,10 +27,10 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-#goodslist{
-display:flex;
-flex-wrap:wrap;
-justify-content: space-around;
-} 
+#goodslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 </style>
     
